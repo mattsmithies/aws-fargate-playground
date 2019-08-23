@@ -84,6 +84,22 @@ aws ecs delete-service --cluster fargate-cluster --service fargate-service
 aws ecs describe-services --cluster fargate-cluster --services fargate-service
 ```
 
+### Updating a Task
+
+```
+aws ecs register-task-definition --cli-input-json file://basic-task/updated-sample-fargate-task.json
+```
+
+### Deploying the new change
+
+Requires a script via https://github.com/aws/aws-cli/issues/3064
+
+```
+aws ecs update-service --cluster fargate-cluster \
+                       --service fargate-service \
+                       --task-definition sample-fargate:2
+```
+
 # DNS
 
 Set up an **A** record for mapping a given task service IP to your domain.
