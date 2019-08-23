@@ -55,10 +55,10 @@ Look at, to get a **subnets** and **securityGroups** value:
 aws ecs create-service --cluster fargate-cluster --service-name fargate-service --task-definition sample-fargate:1 --desired-count 2 --launch-type "FARGATE" --network-configuration "awsvpcConfiguration={subnets=[subnet-0597a417aac87d6de],securityGroups=[sg-0a4b02cf0dadc87d4]}"
 ```
 
-### Update Service With Public IP
+#### Service With Public IP
 
 ```
-aws ecs update-service --cluster fargate-cluster --service-name fargate-service --task-definition sample-fargate:1 --desired-count 2 --launch-type "FARGATE" --network-configuration "awsvpcConfiguration={subnets=[subnet-0597a417aac87d6de],securityGroups=[sg-0a4b02cf0dadc87d4],assignPublicIp=ENABLED}"
+aws ecs create-service --cluster fargate-cluster --service-name fargate-service --task-definition sample-fargate:1 --desired-count 2 --launch-type "FARGATE" --network-configuration "awsvpcConfiguration={subnets=[subnet-0597a417aac87d6de],securityGroups=[sg-0a4b02cf0dadc87d4],assignPublicIp=ENABLED}"
 ```
 
 ###  List Services
@@ -91,5 +91,6 @@ Set up an **A** record for mapping a given task service IP to your domain.
 - http://nginx-demo.remotesoftwaredevelopment.com/
 
 # Resources
-https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
-https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_AWSCLI_Fargate.html
+
+- https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
+- https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_AWSCLI_Fargate.html
