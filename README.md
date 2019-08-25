@@ -3,7 +3,7 @@ Getting to grips and distributing basic apps with AWS Fargate
 
 # TODO:
 
-- Follow guidance from (Rapid Docker on AWS)[https://github.com/jpignata/fargate]
+- Follow guidance from [Rapid Docker on AWS](https://github.com/jpignata/fargate)
 - Gain more knowledge with CloudFormation, ECS, ECR and AWS architecture.
 - Practice with both AWS cli and fargate cli.
 - With AdonisJs test project...
