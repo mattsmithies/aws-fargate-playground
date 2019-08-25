@@ -1,6 +1,18 @@
 # aws-fargate-playground
 Getting to grips and distributing basic apps with AWS Fargate
 
+# TODO:
+
+- Follow guidance from (Rapid Docker on AWS)[https://github.com/jpignata/fargate]
+- Gain more knowledge with CloudFormation, ECS, ECR and AWS architecture.
+- Practice with both AWS cli and fargate cli.
+- With AdonisJs test project...
+    - Dockerize and clean
+    - Upload to ECR
+    - Setup load balancer
+    - Use ECR containers in Fargate
+    - Clean up projects
+
 ### Update AWS CLI
 
 ```
@@ -110,3 +122,6 @@ Set up an **A** record for mapping a given task service IP to your domain.
 
 - https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
 - https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_AWSCLI_Fargate.html
+- https://medium.com/@daniel.revie1/deploying-react-docker-image-to-aws-fargate-bf551128cb88
+- https://cloudonaut.io/rapid-docker-on-aws/
+- https://github.com/jpignata/fargate
